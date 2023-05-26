@@ -1,15 +1,15 @@
 package entity;
 
-public class Person {
+public class Users {
     private int id;
     private String firstName;
     private String lastName;
-    private Long password;
+    private int password;
 
-    public Person() {
+    public Users() {
     }
 
-    public Person(int id, String firstName, String lastName, Long password) {
+    public Users(int id, String firstName, String lastName, int password) {
         this.id = id;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -40,11 +40,11 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public Long getPassword() {
+    public int getPassword() {
         return password;
     }
 
-    public void setPassword(Long password) {
+    public void setPassword(int password) {
         this.password = password;
     }
 }
