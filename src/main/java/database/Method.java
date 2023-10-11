@@ -12,7 +12,7 @@ import java.util.List;
 
 import static database.Query.*;
 
-public class Metod {
+public class Method {
 
     public void createTable() {
 
@@ -26,6 +26,7 @@ public class Metod {
             }
             preparedStatement = connection.prepareStatement(CREATE_TABLE);
             preparedStatement.executeUpdate();
+            System.out.println("created table");
         } catch (SQLException e) {
             throw new RuntimeException(e);
         } finally {
@@ -215,7 +216,7 @@ public class Metod {
                 System.out.println("connection is null");
             } else {
                 preparedStatement = connection.prepareStatement(UPDATEBYPASSWORD);
-                preparedStatement.setInt(1,newPassword );
+                preparedStatement.setInt(1, newPassword);
                 preparedStatement.setInt(2, id);
                 preparedStatement.execute();
             }

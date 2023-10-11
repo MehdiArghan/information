@@ -15,6 +15,4 @@ public class Query {
 
     public static final String DELETEBYID = "delete from users where id=?";
     public static final String UPDATEBYPASSWORD = "update users set password=? where id=?";
-
-
 }

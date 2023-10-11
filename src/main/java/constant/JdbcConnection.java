@@ -29,6 +29,4 @@ public class JdbcConnection {
             resultSet.close();
         }
     }
-
-
 }
